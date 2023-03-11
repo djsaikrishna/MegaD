@@ -1,0 +1,14 @@
+{
+  "name": "mega-downloader",
+  "version": "0.0.1",
+  "description": "Minimalistic mega.nz download manager",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Amazir",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^23.1.3"
+  }
+}
