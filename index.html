@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MegaDL</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
-<body>
-<h1>Mega downloader</h1>
+
+<body style="background: #06671b;width: 100%;">
+    <div class="container" style ="-webkit-app-region: drag;">
+        <div class="row">
+            <div class="col-md-12" style="padding: 0;width: 100%;">
+                <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3" style="width: 100%;margin-left: 0px;padding-right: 0px;margin-right: 0px;">
+                    <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="padding-top: 0px;padding-right: 0px;padding-bottom: 0px;margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-download">
+                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path>
+                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path>
+                                </svg></span><span>MegaDL</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-6"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse flex-grow-0 order-md-first" id="navcol-6">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item"><a class="nav-link active" href="#">Downloads</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+                            </ul>
+                            <div class="d-md-none my-2"><button class="btn btn-light me-2" type="button">Button</button><button class="btn btn-primary" type="button">Button</button></div>
+                        </div>
+                        <div class="d-none d-md-block"><a id="exit" class="btn btn-light me-2" role="button" href="#">Button</a><a class="btn btn-primary" role="button" href="#">Button</a></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4 py-xl-5">
+        <div class="row mb-5">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2>Download</h2>
+                <p>Here you can manage your downloads.</p>
+                <button class="btn btn-primary" type="button" id="newDownload" style="width: 150px;">New download</button>
+            </div>
+        </div>
+        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+            <div class="col">
+                <div class="p-4"><span class="badge rounded-pill bg-primary mb-2">Folder</span>
+                    <h4>Lorem libero donec</h4>
+                    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+                        <div>
+                            <p class="fw-bold mb-0">Progress</p>
+                            <p class="text-muted mb-0">123MB/2GB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-4"><span class="badge rounded-pill bg-primary mb-2">Folder</span>
+                    <h4>Lorem libero donec</h4>
+                    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+                        <div>
+                            <p class="fw-bold mb-0">Progress</p>
+                            <p class="text-muted mb-0">123MB/2GB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-4"><span class="badge rounded-pill bg-primary mb-2">File</span>
+                    <h4>Lorem libero donec</h4>
+                    <p>Ikonka ciężka albo piórko</p>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+                        <div>
+                            <p class="fw-bold mb-0">Progress</p>
+                            <p class="text-muted mb-0">123MB/2GB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./engine/mdl_renderer.js"></script>
 </body>
 </html>
